@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CreateResmeActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_main"
+        android:layout_width="wrap_content"
+        android:layout_height="650dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="75dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/ImageView_cadidate_photo"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:scaleType="centerCrop"
+                        app:shapeAppearanceOverlay="@style/CircleImage"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/TextView_candidte_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="Name"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+                app:layout_constraintStart_toEndOf="@+id/cardView2"
+                app:layout_constraintTop_toTopOf="@+id/cardView2" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="358dp"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+            <ImageView
+                android:id="@+id/imageView_contact"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/contact"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Contact"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_contact"
+                app:layout_constraintStart_toEndOf="@+id/imageView_contact"
+                app:layout_constraintTop_toTopOf="@+id/imageView_contact" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="170dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <ImageView
+
+                android:id="@+id/imageView_call"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/phone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+            <TextView
+                android:id="@+id/TextView_phone_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="918158629625"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_call"
+                app:layout_constraintStart_toEndOf="@+id/imageView_call"
+                app:layout_constraintTop_toTopOf="@+id/imageView_call" />
+
+            <ImageView
+                android:id="@+id/imageView_mail"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/mail"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_call" />
+
+            <TextView
+                android:id="@+id/TextView_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="test126.irr@gmail.com"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_mail"
+                app:layout_constraintStart_toEndOf="@+id/imageView_mail"
+                app:layout_constraintTop_toTopOf="@+id/imageView_mail" />
+
+            <ImageView
+                android:id="@+id/imageView_whatsapp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/whatsapp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_mail" />
+
+            <TextView
+                android:id="@+id/TextView_whatsapp_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="918158629625"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_whatsapp"
+                app:layout_constraintStart_toEndOf="@+id/imageView_whatsapp"
+                app:layout_constraintTop_toTopOf="@+id/imageView_whatsapp" />
+
+            <ImageView
+                android:id="@+id/imageView_profile"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/user"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_whatsapp" />
+
+            <TextView
+                android:id="@+id/textView_prof"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Profile"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_profile"
+                app:layout_constraintStart_toEndOf="@+id/imageView_profile"
+                app:layout_constraintTop_toTopOf="@+id/imageView_profile" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="170dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_prof" />
+
+            <TextView
+
+                android:id="@+id/TextView_candidate_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxWidth="155dp"
+                android:maxHeight="160dp"
+                android:text=" I am Kaida Anis Satarbhai, a 21-year
+old male passionate about the field of
+ Information Technology. Born on 21st
+ September 2004, I currently reside in
+ Rajkot, Gujarat (PIN: 360004). I hold
+ Indian nationality and am proficient in
+ Gujarati, with strong communication
+ skills in professional settings."
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+            <ImageView
+                android:id="@+id/imageView_language"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/chat"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextView_candidate_bio" />
+
+            <TextView
+                android:id="@+id/textView_lang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Languages"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_language"
+                app:layout_constraintStart_toEndOf="@+id/imageView_language"
+                app:layout_constraintTop_toTopOf="@+id/imageView_language" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="170dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_lang" />
+
+            <TextView
+                android:id="@+id/TextView_languages_khow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:inputType="textMultiLine"
+                android:text="Hindi \n English \n Gujarati"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view4"
+                tools:ignore="SmallSp" />
+
+
+            <ImageView
+                android:id="@+id/imageView_education"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/mortarboard"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextView_languages_khow" />
+
+            <TextView
+                android:id="@+id/textView_edu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="education"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_education"
+                app:layout_constraintStart_toEndOf="@+id/imageView_education"
+                app:layout_constraintTop_toTopOf="@+id/imageView_education" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="170dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_edu" />
+
+            <TextView
+                android:id="@+id/TextView_degree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:maxWidth="85dp"
+                android:text="B.C.A "
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view5"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/TextView_degree_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="(Nov-2024) "
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/TextView_degree"
+                app:layout_constraintStart_toEndOf="@+id/TextView_degree"
+                app:layout_constraintTop_toTopOf="@+id/TextView_degree"
+                tools:ignore="SmallSp" />
+
+
+            <TextView
+                android:id="@+id/TextView_degree_institude_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:maxWidth="150dp"
+                android:text="Atmiya University (Rajkot) "
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/TextView_degree"
+                app:layout_constraintTop_toBottomOf="@+id/TextView_degree_date"
+                tools:ignore="SmallSp" />
+
+
+            <TextView
+                android:id="@+id/TextView_degree_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Percentage : "
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/TextView_degree_cgpa"
+                app:layout_constraintTop_toBottomOf="@+id/TextView_degree_cgpa"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/TextView_degree_cgpa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="CGPA : "
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/TextView_degree_institude_name"
+                app:layout_constraintTop_toBottomOf="@+id/TextView_degree_institude_name"
+                tools:ignore="SmallSp" />
+
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="7dp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view3"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+
+            <ImageView
+                android:id="@+id/imageView_work_expere"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/suitcase"
+                app:layout_constraintStart_toEndOf="@+id/view6"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/textView_work_exp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="work experience"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_work_expere"
+                app:layout_constraintStart_toEndOf="@+id/imageView_work_expere"
+                app:layout_constraintTop_toTopOf="@+id/imageView_work_expere" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="170dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageView_work_expere"
+                app:layout_constraintTop_toBottomOf="@+id/textView_work_exp" />
+
+            <TextView
+                android:id="@+id/TextView_work_experience_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inputType="text"
+                android:maxWidth="160dp"
+                android:text="Company"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/view7"
+                app:layout_constraintTop_toBottomOf="@+id/view7"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/TextView_work_experience_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inputType="text"
+                android:maxWidth="160dp"
+                android:text="Post"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/TextView_work_experience_company"
+                app:layout_constraintTop_toBottomOf="@+id/TextView_work_experience_company"
+                tools:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/TextView_work_experience_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inputType="textMultiLine"
+                android:maxWidth="160dp"
+                android:text="What Work Do"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/TextView_work_experience_post"
+                app:layout_constraintTop_toBottomOf="@+id/TextView_work_experience_post"
+                tools:ignore="SmallSp" />
+
+            <ImageView
+                android:id="@+id/imageView_skill"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/skill"
+                app:layout_constraintStart_toEndOf="@+id/view6"
+                app:layout_constraintTop_toBottomOf="@+id/TextView_work_experience_work" />
+
+            <TextView
+                android:id="@+id/textView_sk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="skills"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_skill"
+                app:layout_constraintStart_toEndOf="@+id/imageView_skill"
+                app:layout_constraintTop_toTopOf="@+id/imageView_skill" />
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="170dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/imageView_skill"
+                app:layout_constraintTop_toBottomOf="@+id/textView_sk" />
+
+            <TextView
+                android:id="@+id/TextView_skill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inputType="textMultiLine"
+                android:maxWidth="160dp"
+                android:text="Punctuality and Professional Work Ethic
+Willingness to Learn and Adapt to New Technologies
+Communication and Interpersonal Skills
+Ability to Work Independently and in Teams
+Leadership and Team Collaboration"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/view8"
+                app:layout_constraintTop_toBottomOf="@+id/view8"
+                tools:ignore="SmallSp" />
+
+            <ImageView
+                android:id="@+id/imageView_hobbies"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/puzzle"
+                app:layout_constraintStart_toStartOf="@+id/TextView_skill"
+                app:layout_constraintTop_toBottomOf="@+id/TextView_skill" />
+
+            <TextView
+                android:id="@+id/textView_hoby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="hobbies"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_hobbies"
+                app:layout_constraintStart_toEndOf="@+id/imageView_hobbies"
+                app:layout_constraintTop_toTopOf="@+id/imageView_hobbies" />
+
+            <View
+                android:id="@+id/view9"
+                android:layout_width="170dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/imageView_hobbies"
+                app:layout_constraintTop_toBottomOf="@+id/textView_hoby" />
+
+            <TextView
+                android:id="@+id/TextView_hobbies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inputType="textMultiLine"
+                android:maxWidth="160dp"
+                android:text="Exploring new facts and learning new things
+Curiosity for science, technology, and innovations
+Playing strategic and team-based video games
+Listening to music and watching inspiring movies
+Staying updated with tech trends and digital media"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/view9"
+                app:layout_constraintTop_toBottomOf="@+id/view9"
+                tools:ignore="SmallSp" />
+
+
+            <ImageView
+                android:id="@+id/imageView_tech_skills"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/code_tech"
+                app:layout_constraintStart_toStartOf="@+id/TextView_hobbies"
+                app:layout_constraintTop_toBottomOf="@+id/TextView_hobbies" />
+
+            <TextView
+                android:id="@+id/textView_tech_skill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Technical Skills"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_tech_skills"
+                app:layout_constraintStart_toEndOf="@+id/imageView_tech_skills"
+                app:layout_constraintTop_toTopOf="@+id/imageView_tech_skills" />
+
+            <View
+                android:id="@+id/view15"
+                android:layout_width="170dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/imageView_tech_skills"
+                app:layout_constraintTop_toBottomOf="@+id/textView_tech_skill" />
+
+            <TextView
+                android:id="@+id/TextView_tech_skill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inputType="textMultiLine"
+                android:maxWidth="160dp"
+                android:text="Exploring new facts and learning new things
+Curiosity for science, technology, and innovations
+Playing strategic and team-based video games
+Listening to music and watching inspiring movies
+Staying updated with tech trends and digital media"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/view15"
+                app:layout_constraintTop_toBottomOf="@+id/view15"
+                tools:ignore="SmallSp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview_main">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_edit"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edit_view"
+            android:text="Edit"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_download"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/custom_edit_view"
+            android:text="Download"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
