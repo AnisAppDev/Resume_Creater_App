@@ -30,7 +30,7 @@ class SignUpActivity : AppCompatActivity() {
 
         //initialize progress dialog
         progress = ProgressDialog(this)
-        progress.setMessage("User Creating")
+        progress.setMessage("User Creating....")
 
 
         //firebase initializtion

@@ -119,7 +119,6 @@ class ThirdTemplateActivity : AppCompatActivity() {
 
                     }
 
-
                 }
             }
 
